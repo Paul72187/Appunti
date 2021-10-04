@@ -1,0 +1,22 @@
+{
+  "name": "appunti",
+  "version": "1.0.0",
+  "description": "a note taking app",
+  "main": "appunti.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drkitsch/appunti.git"
+  },
+  "author": "Harry Laura Paul Shakira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/drkitsch/appunti/issues"
+  },
+  "homepage": "https://github.com/drkitsch/appunti#readme",
+  "dependencies": {
+    "pg": "^8.7.1"
+  }
+}
