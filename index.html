@@ -8,8 +8,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1>APPUNTI</h1>
 
+   <section> 
+       <h2>Add Notes</h2>
+       <input type="text"
+       cols="40" 
+       rows="5" 
+       style="width:200px; height:50px;" 
+       name="Text1" 
+       id="Text1" 
+       value="" placeholder="Write your note here"/>  
+    </input> 
+    <input type="submit" value="Add Note">
+   </section>
 
- <script src="src/appunti.js"></script>
-</body>
-</html>
+   <section>
+       <h2>Your Notes</h2>
+       <div class="addedNote">
+        Learning JS is fun but hard work.
+      </div>
+      <input type="delete" value="Delete Note">
+   </section>
+
