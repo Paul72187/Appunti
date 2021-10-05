@@ -47,8 +47,6 @@ I want to be able to search for a key word
 ---
 ## Diagrams
 
-![database_set up.png](./images/database_setup.png "Database setup")
-
 ![domain_model.png](./images/domain_model.png "Domain Model Image")
 
 ![http_request.png](./images/http_request.png "HTTP REQUEST IMAGE")
