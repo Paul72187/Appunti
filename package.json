@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/drkitsch/appunti#readme",
   "dependencies": {
-    "pg": "^8.7.1"
+    "http-server": "^13.0.2"
   }
 }
