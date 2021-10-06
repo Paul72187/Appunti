@@ -1,34 +1,37 @@
 class Biblioteca{
 
 	constructor(){
-	  this.storageObj = [];
+	  this.storageArr = [];
 	}
 
 	add(title, content){
 		
-		console.log(localStorage.getItem("My_Notes"))
+		this.storageArr = (JSON.parse(localStorage.getItem("My_Notes")));
 
-		if(localStorage.getItem("My_Notes") == null){
-			this.storageObj = JSON.parse(localStorage.getItem("My_Notes"));
+		if(this.storageArr == null){
+			this.storageArr = [];
 		}
 
-		this.storageObj.push({title: title, content: content});
+		this.storageArr.push({title: title, content: content});
 
-		let storageJson = JSON.stringify(this.storageObj);
+		let storageJson = JSON.stringify(this.storageArr);
 		localStorage.setItem("My_Notes", storageJson);
 
 	}
 
 	view(){
-		this.storageObj = JSON.parse(localStorage.getItem("My_Notes"));
-		return this.storageObj;
+		this.storageArr = JSON.parse(localStorage.getItem("My_Notes"));
+
+		return this.storageArr;
 	}
 
 }
 
-class appunti{
-	constructor(title, content){
-		this.title = title;
-		this.content = content;
-	}
-}
+// class appunti{
+
+// 	constructor(title, content){
+// 		this.title = title;
+// 		this.content = content;
+// 	}
+
+// }
