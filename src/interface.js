@@ -11,17 +11,21 @@ function displayNotes() {
 		let card = document.createElement("card");
     let noteTitle = document.createElement("div")	
 		let noteCtnt = document.createElement("div")
-		let noteBtn = document.createElement("div")
+		let noteBtn = document.createElement("button")
     let title = document.createElement("h3")
+		let trash = document.createElement("i")
 
-		title.innerHTML = note.title
-		noteCtnt.innerHTML = note.content
+		trash.className = "fas fa-trash-alt";
+		noteTitle.className = "noteTitle";
+		title.innerHTML = note.title;
+		noteCtnt.innerHTML = note.content;
 
 		notesSection.appendChild(card)
 		card.appendChild(noteTitle)
 		card.appendChild(noteCtnt)
 		card.appendChild(noteBtn)
 		noteTitle.appendChild(title)
+		noteBtn.appendChild(trash)
 	})
 } 
 
