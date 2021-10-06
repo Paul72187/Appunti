@@ -1,57 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Appunti</title>
-    <link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Appunti</title>
+	<script src="https://kit.fontawesome.com/65db07c83e.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 	<div class="container">
 		<h1>APPUNTI</h1>
 		<section class="noteSection">
-			<section class="noteColumn yourNotes" id="yourNotes">
+			<section class="noteColumn yourNotes">
 				<h2>Your Notes</h2>
-				
+				<section id="yourNotes"></section>
 			</section>
-			<section class="noteColumn addNotes">
+			<section class="noteColumn">
 				<h2>Add Notes</h2>
-				<card>
-					<div class="noteTitle">
-						<!-- we'll get the title from the note obj we retrieve -->
-						<h3> Add Title here</h3>
-					</div>
-					<div class="add_note_ctnt">
-						<!-- same for the content -->
-						<input type="text" cols="40" rows="5" style="width:200px; height:50px;" name="Text1" id="Text1" value=""
-					placeholder="Write your note here" />
-						</input>
-					</div>
-					<div class="add_note_btn">
-						<!-- lets change this to a plus+ icon? -->
-						<input type="submit" value="Add Note">
-					</div>
-				</card>
+				<section class="addNotes">
+					<card>
+						<div class="noteTitle">
+							<input maxlength="40" id="titleInput" type="text" placeholder="Add note title">
+						</div>
+						<textarea maxlength="240" id="contentInput" cols="30" rows="10" placeholder="write note here..."></textarea>
+						<button><i class="fas fa-plus-square"></i></button>
+					</card>
+				</section>
 			</section>
-			
+
 		</section>
 		<script src="./src/appunti.js"></script>
 		<script src="./src/interface.js"></script>
 		<script src="./spec/appuntiSpec.js"></script>
 	</div>
 </body>
-</html>
 
-<!-- <card>
-	<div class="noteTitle">
-		<h3>Title here</h3>
-	</div>
-	<div class="add_note_ctnt">
-		loooooookkkdhadfj at all this content
-	</div>
-	<div class="add_note_btn">
-		
-		<input type="delete" value="delete">
-	</div>
-</card> -->
+</html>
