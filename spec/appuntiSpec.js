@@ -33,6 +33,11 @@ function it(label, callback){
 it("should pass my damn test", () => {
 	expect(2+2).toEqual(4)
 })
+
+it("should include e ", () => {
+	expect("hello").toInclude("e")
+})
+
 // it("add to local storage", () => {
 // 	let lib = new Biblioteca();
 // 	lib.add("shopping", "The hype")
