@@ -5,10 +5,21 @@ class Biblioteca{
 	}
 
 	add(title, content){
-		let element = {};
-		element.title = title;
-		element.content = content;
-    	this.storageObj.push(element)
+		this.storageObj.push({title: title, content: content});
+		let storageJson = JSON.stringify(this.storageObj);
+		localStorage.setItem("My_Notes", storageJson);
 	}
 
+	view(){
+		this.storageObj = JSON.parse(localStorage.getItem("My_Notes"));
+		return this.storageObj;
+	}
+
+}
+
+class appunti{
+	constructor(title, content){
+		this.title = title;
+		this.content = content;
+	}
 }
