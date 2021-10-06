@@ -16,6 +16,7 @@ function expect(actual){
 		},
 		//can be used on Arrays and Strings
 		toInclude: function(expected){
+			console.log(expected)
 			if(actual.includes(expected)){
 				console.log("Passed")
 			}else{
@@ -32,3 +33,9 @@ function it(label, callback){
 it("should pass my damn test", () => {
 	expect(2+2).toEqual(4)
 })
+// it("add to local storage", () => {
+// 	let lib = new Biblioteca();
+// 	lib.add("shopping", "The hype")
+// 	let arrJson = JSON.parse(localStorage.getItem("My_Notes"));
+// 	expect(arrJson).toInclude({title: "shopping", content: "The hype"})
+// })

@@ -5,6 +5,7 @@ class Biblioteca{
 	}
 
 	add(title, content){
+		this.storageObj = JSON.parse(localStorage.getItem("My_Notes"));
 		this.storageObj.push({title: title, content: content});
 		let storageJson = JSON.stringify(this.storageObj);
 		localStorage.setItem("My_Notes", storageJson);
