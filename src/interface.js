@@ -1,4 +1,5 @@
-const biblioteca = new Biblioteca;
+const biblioteca = new Biblioteca(localStorage);
+// const biblioteca = new Biblioteca;
 
 //get elements
 let notesSection = document.getElementById("yourNotes");
