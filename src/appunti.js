@@ -20,9 +20,10 @@ class Biblioteca{
 	}
 
 	view(){
-		this.storageArr = JSON.parse(localStorage.getItem("My_Notes"));
 
+		this.storageArr = JSON.parse(localStorage.getItem("My_Notes"));
 		return this.storageArr;
+		
 	}
 
 }
