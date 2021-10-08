@@ -23,8 +23,9 @@ function displayNotes() {
 
 			trash.className = "fas fa-trash-alt";
 			noteTitle.className = "noteTitle";
-			title.innerHTML = note.title;
-			noteCtnt.innerHTML = note.content;
+			title.innerHTML = note[0];
+			noteCtnt.innerHTML = note[1];
+			noteBtn.id = note[0];
 
 			notesSection.appendChild(card)
 			card.appendChild(noteTitle)
