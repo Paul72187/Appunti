@@ -45,7 +45,7 @@ h2{
 	margin-left: 15px;
 	margin-right: -2000px;
 	padding-right: 2000px;
-	height: 450px;
+	height: 600px;
 }
 card{
 	display: grid;
@@ -70,7 +70,6 @@ button{
 #titleInput{
   background-color: transparent;
 	border: none;
-	width: 100%;
 	max-height: 30px;
 	border-radius: 1%;
   cursor: pointer;
@@ -81,10 +80,12 @@ button{
 }
 textarea{
 	background-color: transparent;
+	width: 100%;
 	border:none;
 	height:60px;
 	padding: 5px;
   cursor: pointer;
+	resize: none;
 }
 
 
