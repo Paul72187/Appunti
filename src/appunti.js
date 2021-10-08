@@ -2,28 +2,22 @@
 class Biblioteca{
 
 	constructor(storage){
-	  this.storageArr = [];
 	  this.storage = storage;
 	}
 
 	add(title, content){
-		
-		this.storageArr = (JSON.parse(this.storage.getItem("My_Notes")));
-
-		if(this.storageArr == null){
-			this.storageArr = [];
-		}
-
-		this.storageArr.push({title: title, content: content});
-
-		let storageJson = JSON.stringify(this.storageArr);
-		this.storage.setItem("My_Notes", storageJson);
-
+		this.storage.setItem(title, content);
 	}
 
 	view(){
-		this.storageArr = JSON.parse(this.storage.getItem("My_Notes"));
-		return this.storageArr;
+		
+		let keys = Object.keys(localStorage)
+		let notes = [];
+		keys.forEach(key => {
+			let value = localStorage.getItem(key);
+			 notes.push([key, value]);
+		});
+		return notes;
 		
 	}
 
